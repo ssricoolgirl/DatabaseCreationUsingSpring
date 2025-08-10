@@ -15,7 +15,7 @@ import javax.persistence.Entity;
 public class SaveController {
     @Autowired
     private SaveService saveService;
-
+    public SaveContact savecontact;
     @PostMapping("/Payload/ContactUs")
     ResponseEntity<?> save(@RequestBody SaveRequest saveRequest){
         SaveEntity saveEntity=new SaveEntity();
